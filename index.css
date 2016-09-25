@@ -1,7 +1,9 @@
 #main-nav{
 	    margin-bottom: 0;
 }
-
+.small-top-margin{
+	margin-top:15px;
+}
 .top-text{
 	color:#FFFFFF;
 position:relative;
