@@ -1,19 +1,18 @@
-.blue-line{
-	position:absolute;
-	top:1px;
-	width:4px;
-	height:80%;
-	background:#00bcce
+#main-nav{
+	    margin-bottom: 0;
 }
 
 .top-text{
-	color:#ffff00;
-	padding-bottom:20px;
+	color:#FFFFFF;
+position:relative;
+top:40%;
 }
 .centered{
 	text-align:center;
 }
-
+#firstSection{
+	height:300px;
+}
 .withBackground{
 	background-image: url("./index_files/Cincybackgroundsmall.JPG");
 	background-size: 100% 100%;
