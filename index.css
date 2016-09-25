@@ -17,6 +17,13 @@
 	background-image: url("./index_files/Cincybackgroundsmall.JPG");
 	background-size: 100% 100%;
 	}
+
+@media (max-width:549px) {
+
+.inline{
+padding-bottom:10px;}
+}
+}
 @media (min-width: 550px) {
 .withBackground{
  	background-image: url("./index_files/Cincybackground.JPG");
@@ -26,9 +33,6 @@
 	width: calc(100% - 320px);
 }
 
-.inline{
-	display:inline-block;
-}
 }
 #logo{
 	padding-top:20px;
