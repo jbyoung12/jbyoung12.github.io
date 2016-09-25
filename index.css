@@ -25,6 +25,10 @@
 	display:inline-block;
 	width: calc(100% - 320px);
 }
+
+.inline{
+	display:inline-block;
+}
 }
 #logo{
 	padding-top:20px;
@@ -37,7 +41,9 @@
 	padding-left:25px;
 	padding-right:25px;
 }
-
+.inline{
+	text-align:center;
+}
 .with-light-blue{
 	background-color: #54B9CB;
 }
@@ -61,9 +67,6 @@ html {
   height: auto;
 }
 
-.inline{
-	display:inline-block;
-}
 
 .top-margin{
 	padding-top:20px;
