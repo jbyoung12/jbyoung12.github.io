@@ -23,7 +23,7 @@
 .inline{
 padding-bottom:10px;}
 }
-}
+
 @media (min-width: 550px) {
 .withBackground{
  	background-image: url("./index_files/Cincybackground.JPG");
