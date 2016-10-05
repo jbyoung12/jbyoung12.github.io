@@ -111,7 +111,7 @@ html {
 }
 .body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 135px;
 }
 .footer {
   position: absolute;
@@ -149,6 +149,13 @@ color:white;
 }
 .social-buttons .fa-stack-1x{
 	color:#354458;
+}
+.fa.fa-instagram{	
+	font-size:1.3em;
+}
+.resume{
+	height:950px;
+	padding-bottom:0px;
 }
 @media (max-width:600px){
 	a{display:block; margin: 20px 0px; text-align:center;}
