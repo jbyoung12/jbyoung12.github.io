@@ -36,7 +36,6 @@ h2{
 .container-fluid
 {
 	position: relative;
-    top: 50px;
 }
 .contact 
 h1{
@@ -163,12 +162,16 @@ color:white;
     height: 100px;}
     h2{top:12.5%;}
     .section {
-    	padding-bottom:25px;
-    	padding-top:25px;
+    	    padding-bottom: 10px;
+    padding-top: 10px;
+ }
+div#secondSection{
+ 	    padding-left: 0;
+    padding-right: 0;
  }
     .social-buttons a{
     	display:inline-block;
-    	font-size:.5em;
+    	font-size:.4em;
     }
 
 }
