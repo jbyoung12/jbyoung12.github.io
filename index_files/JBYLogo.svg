@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 187.5px;
+        font-family: "Avenir Next";
+      }
+
+      .cls-1, .cls-2 {
+        fill: #77c5f7;
+      }
+
+      .cls-2 {
+        stroke: #77c5f7;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <image id="Rectangle_1" data-name="Rectangle 1" x="2" width="495" height="495" xlink:href="data:img/png;base64,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"/>
+  <text id="JBY" class="cls-1" x="84.898" y="315.086">JBY</text>
+  <path class="cls-2" d="M106,351v-4H394v4H106Z"/>
+  <path id="Shape_1_copy_6" data-name="Shape 1 copy 6" class="cls-2" d="M423,250v-4h70v4H423Z"/>
+  <path id="Shape_1_copy_8" data-name="Shape 1 copy 8" class="cls-2" d="M177.071,416.985l-3.055-2.733,72.935-65.258,3.055,2.733Z"/>
+  <path id="Shape_1_copy_11" data-name="Shape 1 copy 11" class="cls-2" d="M253.161,146.985l-3.177-2.733L325.83,78.994l3.176,2.733Z"/>
+  <path id="Shape_1_copy_14" data-name="Shape 1 copy 14" class="cls-2" d="M36.656,282.992l-1.648-1.487L74.355,246,76,247.484Z"/>
+  <path id="Shape_1_copy_15" data-name="Shape 1 copy 15" class="cls-2" d="M424.575,247.992l-1.567-1.447L460.436,212,462,213.444Z"/>
+  <path id="Shape_1_copy_9" data-name="Shape 1 copy 9" class="cls-2" d="M246.986,350.681l3.217-2.694,76.8,64.324-3.216,2.694Z"/>
+  <path id="Shape_1_copy_12" data-name="Shape 1 copy 12" class="cls-2" d="M36.993,211.48l1.568-1.487L76,245.515,74.436,247Z"/>
+  <path id="Shape_1_copy_13" data-name="Shape 1 copy 13" class="cls-2" d="M424.994,251.32l1.407-1.327L460,281.676,458.6,283Z"/>
+  <path id="Shape_1_copy_10" data-name="Shape 1 copy 10" class="cls-2" d="M175.987,78l3.056-3.016,72.965,72.005-3.056,3.016Z"/>
+  <path id="Shape_1_copy" data-name="Shape 1 copy" class="cls-2" d="M105,150v-4H393v4H105Z"/>
+  <path id="Shape_1_copy_7" data-name="Shape 1 copy 7" class="cls-2" d="M3,249v-4H77v4H3Z"/>
+  <path id="Shape_1_copy_2" data-name="Shape 1 copy 2" class="cls-2" d="M248,5h4V147h-4V5Z"/>
+  <path id="Shape_1_copy_3" data-name="Shape 1 copy 3" class="cls-2" d="M247,348h4V489h-4V348Z"/>
+  <path id="Shape_1_copy_4" data-name="Shape 1 copy 4" class="cls-2" d="M423,179h4V315h-4V179Z"/>
+  <path id="Shape_1_copy_5" data-name="Shape 1 copy 5" class="cls-2" d="M73,177h4V318H73V177Z"/>
+</svg>
