@@ -145,7 +145,7 @@ html {
     	display:inline-block;
     	font-size:.75em;
     }
-a.white-decoration{
+div a.white-decoration{
 	text-decoration-color: white;
 }
 a:link {
