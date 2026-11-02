@@ -2,14 +2,13 @@
 import Base from "../layouts/Base.astro";
 import { email, socials } from "../data/site";
 
-const description = "Email Joshua Young, or find him on GitHub and elsewhere.";
+const description = "Email Joshua Young.";
 ---
 
 <Base title="Contact" description={description}>
   <h1 class="page-title">Contact</h1>
   <p class="lede">Email is the best way to reach me.</p>
   <p><a class="email" href={`mailto:${email}`}>{email}</a></p>
-  <h2 class="section-label">Elsewhere</h2>
   <ul class="socials">
     {
       socials.map((item) => (
