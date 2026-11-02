@@ -49,6 +49,13 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    name: "Good Morning World",
+    summary:
+      "A short morning show about what matters to you, with an anchor you can talk to.",
+    href: "https://gm-world.joshuabyoung.me",
+    featured: true,
+  },
+  {
     name: "FlyMe",
     summary:
       "A flying-car hop planner. Cameras rebuild the street, and a simulator has to certify the landing before the car hops.",
