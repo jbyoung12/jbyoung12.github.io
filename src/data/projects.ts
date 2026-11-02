@@ -63,13 +63,6 @@ export const projects: Project[] = [
     href: "https://github.com/jbyoung12/iterum",
     featured: true,
   },
-  {
-    name: "Straude",
-    stack: "Contribution",
-    summary: "Strava for Claude Code. I contributed.",
-    href: "https://straude.com",
-    featured: true,
-  },
 ];
 
 export const featuredProjects = projects.filter((project) => project.featured);
