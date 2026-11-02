@@ -11,7 +11,7 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-const fullTitle = title === "Joshua Young" ? title : `${title} · Joshua Young`;
+const fullTitle = title === "Joshua B. Young" ? title : `${title} · Joshua B. Young`;
 const canonicalPath = Astro.url.pathname
   .replace(/\.html$/, "")
   .replace(/\/index$/, "") || "/";
@@ -30,7 +30,7 @@ const canonical = new URL(canonicalPath, Astro.site);
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
-    <meta property="og:site_name" content="Joshua Young" />
+    <meta property="og:site_name" content="Joshua B. Young" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
   </head>
