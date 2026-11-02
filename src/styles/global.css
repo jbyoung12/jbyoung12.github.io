@@ -109,7 +109,19 @@ main {
 }
 
 .hero {
-  padding: 2.75rem 0 0.5rem;
+  padding: 2.5rem 0 0;
+}
+
+.hero h1 {
+  margin: 0;
+  max-width: 16em;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-weight: 500;
+  font-optical-sizing: auto;
+  font-size: clamp(2.5rem, 5.2vw, 4rem);
+  letter-spacing: -0.035em;
+  line-height: 1.05;
 }
 
 .page-title {
@@ -123,19 +135,9 @@ main {
   padding-top: 3.25rem;
 }
 
-.dek,
 .lede {
   max-width: 34rem;
   color: var(--muted);
-}
-
-.dek {
-  margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(1.35rem, 2.4vw, 1.7rem);
-  font-weight: 450;
-  line-height: 1.35;
-  letter-spacing: -0.02em;
 }
 
 .intro {
@@ -149,7 +151,7 @@ main {
   justify-content: space-between;
   align-items: baseline;
   gap: 1rem;
-  margin-top: 3.75rem;
+  margin-top: 2.5rem;
 }
 
 .kicker {
@@ -357,7 +359,11 @@ main {
   }
 
   .hero {
-    padding-top: 1.75rem;
+    padding-top: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.35rem;
   }
 
   .project-head {
