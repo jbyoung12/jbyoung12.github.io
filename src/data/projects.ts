@@ -52,7 +52,7 @@ export const projects: Project[] = [
     name: "Good Morning World",
     summary:
       "A short morning show about what matters to you, with an anchor you can talk to.",
-    href: "https://gm-world.joshuabyoung.me",
+    href: "https://good-morning-world.vercel.app",
     featured: true,
   },
   {
