@@ -114,14 +114,14 @@ main {
 
 .hero h1 {
   margin: 0;
-  max-width: 13em;
   color: var(--ink);
   font-family: var(--serif);
   font-weight: 500;
   font-optical-sizing: auto;
-  font-size: clamp(2.15rem, 5vw, 4rem);
+  font-size: clamp(2rem, 4.4vw, 3.5rem);
   letter-spacing: -0.035em;
   line-height: 1.05;
+  white-space: nowrap;
 }
 
 .page-title {
@@ -357,7 +357,8 @@ main {
   }
 
   .hero h1 {
-    font-size: 2.05rem;
+    font-size: 1.85rem;
+    white-space: normal;
   }
 
   .project-head {
