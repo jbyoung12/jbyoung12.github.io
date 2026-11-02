@@ -1,18 +1,55 @@
 export type Project = {
   name: string;
   summary: string;
-  stack: string;
   href: string;
+  stack?: string;
   source?: string;
   site?: string;
   featured?: boolean;
-  earlier?: boolean;
 };
 
 export const projects: Project[] = [
   {
-    name: "Flyme",
-    stack: "JavaScript",
+    name: "Aeolus",
+    summary:
+      "A trip plan that starts with destinations and dates, then keeps the route, stays, and booking decisions in one place.",
+    href: "https://aeolus-5tt.pages.dev",
+    featured: true,
+  },
+  {
+    name: "Rewind",
+    summary:
+      "Turns a year of photos and videos into a short film, cut on your iPhone. The library stays on the phone.",
+    href: "https://rewindfilm.app",
+    featured: true,
+  },
+  {
+    name: "Nostos",
+    summary: "A family tree with the people, the stories, and the records behind them.",
+    href: "https://nostos-family.pages.dev",
+    featured: true,
+  },
+  {
+    name: "Faber",
+    summary:
+      "Describe a recurring task. Faber previews the first run, then does it in the apps you already use.",
+    href: "https://getfaber.co",
+    featured: true,
+  },
+  {
+    name: "Window Seat",
+    summary: "A daily geography game. Guess where a photo was taken from an airplane window.",
+    href: "https://playwindowseat.com",
+    featured: true,
+  },
+  {
+    name: "Yamas",
+    summary: "Say what you're craving. Yamas recommends restaurants that match.",
+    href: "https://askyamas.com",
+    featured: true,
+  },
+  {
+    name: "FlyMe",
     summary:
       "A flying-car hop planner. Cameras rebuild the street, and a simulator has to certify the landing before the car hops.",
     href: "https://github.com/jbyoung12/flyme",
@@ -20,61 +57,19 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    name: "Straude",
-    stack: "TypeScript",
-    summary:
-      "Strava for Claude Code. Track sessions, share them, and climb a leaderboard.",
-    href: "https://straude.com",
-    source: "https://github.com/jbyoung12/straude",
-    featured: true,
-  },
-  {
-    name: "Hermes",
-    stack: "Rust",
-    summary:
-      "Control Claude Code from Slack. Each channel is a repo, and each thread is a session.",
-    href: "https://github.com/jbyoung12/hermes-bot",
-    featured: true,
-  },
-  {
-    name: "lerobot404",
-    stack: "Python",
-    summary:
-      "Language-tasked pick-and-place for an SO-101 arm in Isaac Sim, with a pipeline into LeRobot. It retries when a grasp fails.",
-    href: "https://github.com/jbyoung12/lerobot404",
-    featured: true,
-  },
-  {
-    name: "space-sim",
-    stack: "Python",
-    summary:
-      "Short illustrations of ATP synthase and adenylate kinase. The clips are visualizations, not molecular-dynamics trajectories.",
-    href: "https://github.com/jbyoung12/space-sim",
-  },
-  {
     name: "Iterum",
-    stack: "Rust",
     summary:
       "A Redis-backed context layer. Before an agent retries a brittle tool, Iterum hands it the facts and failure notes from last time.",
     href: "https://github.com/jbyoung12/iterum",
+    featured: true,
   },
   {
-    name: "Email Organizer",
-    stack: "Python",
-    summary:
-      "A prompt-driven IMAP sorter. Rules keep a message, move it, or trash it, and the run stays a dry run until you say otherwise.",
-    href: "https://github.com/jbyoung12/email-organizer",
-  },
-  {
-    name: "GoBringIt",
-    stack: "Swift",
-    summary: "A food ordering and delivery platform.",
-    href: "https://www.gobringit.com/",
-    source: "https://github.com/jbyoung12/GoBringIt-Delivery",
-    earlier: true,
+    name: "Straude",
+    stack: "Contribution",
+    summary: "Strava for Claude Code. I contributed.",
+    href: "https://straude.com",
+    featured: true,
   },
 ];
 
 export const featuredProjects = projects.filter((project) => project.featured);
-export const currentProjects = projects.filter((project) => !project.earlier);
-export const earlierProjects = projects.filter((project) => project.earlier);

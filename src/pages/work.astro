@@ -1,15 +1,13 @@
 ---
 import Base from "../layouts/Base.astro";
 import ProjectList from "../components/ProjectList.astro";
-import { currentProjects, earlierProjects } from "../data/projects";
+import { projects } from "../data/projects";
 
-const description = "Software by Joshua Young, including Straude, Flyme, Hermes, and lerobot404.";
+const description =
+  "Work by Joshua Young, including Aeolus, Rewind, Nostos, Faber, Window Seat, Yamas, and FlyMe.";
 ---
 
 <Base title="Work" description={description}>
   <h1 class="page-title">Work</h1>
-  <p class="lede">Things I've built and shipped. The newer work is first.</p>
-  <ProjectList projects={currentProjects} />
-  <h2 class="section-label">Earlier</h2>
-  <ProjectList projects={earlierProjects} heading="h3" />
+  <ProjectList projects={projects} />
 </Base>

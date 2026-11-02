@@ -40,7 +40,7 @@ const external = { target: "_blank", rel: "noreferrer noopener" };
                   Source
                 </a>
               )}
-              <span>{project.stack}</span>
+              {project.stack && <span>{project.stack}</span>}
             </p>
           </div>
           <p>{project.summary}</p>
