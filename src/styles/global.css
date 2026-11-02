@@ -305,24 +305,37 @@ main {
 }
 
 .socials {
-  list-style: none;
-  margin: 0.4rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  max-width: 46rem;
+  margin: 0.85rem 0 0;
   padding: 0;
+  list-style: none;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 450;
+  line-height: 1.45;
 }
 
 .socials li {
-  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: baseline;
+}
+
+.socials li:not(:last-child)::after {
+  content: "·";
+  margin: 0 0.7rem;
+  color: var(--muted);
 }
 
 .socials a {
-  display: block;
-  padding: 0.75rem 0;
-  text-decoration: none;
-  font-size: 1.15rem;
+  color: var(--accent);
+  text-underline-offset: 0.16em;
 }
 
-.socials li:last-child {
-  border-bottom: 1px solid var(--line);
+.socials a:hover {
+  color: var(--ink);
 }
 
 .site-footer {
