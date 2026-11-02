@@ -40,20 +40,17 @@ export const projects: Project[] = [
     name: "Window Seat",
     summary: "A daily geography game. Guess where a photo was taken from an airplane window.",
     href: "https://playwindowseat.com",
-    featured: true,
   },
   {
     name: "Yamas",
     summary: "Say what you're craving. Yamas recommends restaurants that match.",
     href: "https://askyamas.com",
-    featured: true,
   },
   {
     name: "Good Morning World",
     summary:
       "A short morning show about what matters to you, with an anchor you can talk to.",
     href: "https://good-morning-world.vercel.app",
-    featured: true,
   },
   {
     name: "FlyMe",
@@ -61,14 +58,12 @@ export const projects: Project[] = [
       "A flying-car hop planner. Cameras rebuild the street, and a simulator has to certify the landing before the car hops.",
     href: "https://github.com/jbyoung12/flyme",
     site: "https://flyme-111809628719.us-west1.run.app",
-    featured: true,
   },
   {
     name: "Iterum",
     summary:
       "A Redis-backed context layer. Before an agent retries a brittle tool, Iterum hands it the facts and failure notes from last time.",
     href: "https://github.com/jbyoung12/iterum",
-    featured: true,
   },
 ];
 
