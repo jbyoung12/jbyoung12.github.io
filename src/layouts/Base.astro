@@ -1,0 +1,44 @@
+---
+import "@fontsource-variable/newsreader/opsz.css";
+import "@fontsource-variable/public-sans/wght.css";
+import "../styles/global.css";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const fullTitle = title === "Joshua Young" ? title : `${title} · Joshua Young`;
+const canonicalPath = Astro.url.pathname
+  .replace(/\.html$/, "")
+  .replace(/\/index$/, "") || "/";
+const canonical = new URL(canonicalPath, Astro.site);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="theme-color" content="#f4f0e6" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Joshua Young" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <SiteHeader />
+    <main id="content" class="shell">
+      <slot />
+    </main>
+    <SiteFooter />
+  </body>
+</html>

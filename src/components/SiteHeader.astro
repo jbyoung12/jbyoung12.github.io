@@ -1,0 +1,22 @@
+---
+import { nav } from "../data/site";
+
+const path =
+  Astro.url.pathname.length > 1
+    ? Astro.url.pathname.replace(/\/$/, "").replace(/\.html$/, "")
+    : "/";
+---
+
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-header shell">
+  <a class="brand" href="/">Joshua Young</a>
+  <nav class="nav" aria-label="Primary">
+    {
+      nav.map((item) => (
+        <a href={item.href} aria-current={path === item.href ? "page" : undefined}>
+          {item.label}
+        </a>
+      ))
+    }
+  </nav>
+</header>

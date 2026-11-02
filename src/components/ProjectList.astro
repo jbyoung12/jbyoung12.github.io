@@ -1,0 +1,51 @@
+---
+import type { Project } from "../data/projects";
+
+interface Props {
+  projects: Project[];
+  heading?: "h2" | "h3";
+}
+
+const { projects, heading = "h2" } = Astro.props;
+const external = { target: "_blank", rel: "noreferrer noopener" };
+---
+
+<ul class="projects">
+  {
+    projects.map((project) => (
+      <li>
+        <article class="project">
+          <div class="project-head">
+            {heading === "h3" ? (
+              <h3>
+                <a href={project.href} {...external}>
+                  {project.name}
+                </a>
+              </h3>
+            ) : (
+              <h2>
+                <a href={project.href} {...external}>
+                  {project.name}
+                </a>
+              </h2>
+            )}
+            <p class="meta">
+              {project.site && (
+                <a href={project.site} {...external}>
+                  Site
+                </a>
+              )}
+              {project.source && (
+                <a href={project.source} {...external}>
+                  Source
+                </a>
+              )}
+              <span>{project.stack}</span>
+            </p>
+          </div>
+          <p>{project.summary}</p>
+        </article>
+      </li>
+    ))
+  }
+</ul>

@@ -1,0 +1,36 @@
+---
+import Base from "../layouts/Base.astro";
+import ProjectList from "../components/ProjectList.astro";
+import { featuredProjects } from "../data/projects";
+import { email, socials } from "../data/site";
+
+const description =
+  "Joshua Young is a traveler, hiker, programmer, and classicist from Cincinnati.";
+const person = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Joshua Young",
+  url: "https://joshuabyoung.me",
+  email,
+  homeLocation: {
+    "@type": "Place",
+    name: "Cincinnati, Ohio",
+  },
+  sameAs: socials.map((item) => item.href),
+};
+---
+
+<Base title="Joshua Young" description={description}>
+  <section class="hero">
+    <h1>Joshua Young</h1>
+    <p class="dek">Traveler, hiker, programmer, classicist.</p>
+    <p class="intro">From Cincinnati. I write software, and I spend a lot of time on the road.</p>
+  </section>
+
+  <div class="section-row">
+    <h2 class="kicker">Selected work</h2>
+    <a href="/work">All work</a>
+  </div>
+  <ProjectList projects={featuredProjects} heading="h3" />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(person)} />
+</Base>

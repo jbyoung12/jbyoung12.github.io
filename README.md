@@ -1,3 +1,10 @@
-# jbyoung12.github.io
+# joshuabyoung.me
 
-This is my personal website hosted by GitHub!
+Personal site for Joshua Young. Astro, published to GitHub Pages from `master`.
+
+```bash
+pnpm dev
+pnpm build
+```
+
+`public/CNAME` keeps the custom domain. Pushes to `master` run `.github/workflows/deploy.yml`.
